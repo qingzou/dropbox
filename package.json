@@ -1,0 +1,36 @@
+{
+  "name": "recursivereaddir",
+  "version": "1.0.0",
+  "description": "A recursive implementation of fs.readdir",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -- index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CrabDude/nodejs-recursivereaddir-starter.git"
+  },
+  "author": "Adam Crabtree",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CrabDude/nodejs-recursivereaddir/issues"
+  },
+  "homepage": "https://github.com/CrabDude/nodejs-recursivereaddir#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "bluebird-nodeify": "^1.1.0",
+    "body-parser": "^1.15.0",
+    "co": "^4.6.0",
+    "co-express": "^1.2.1",
+    "express": "^4.13.4",
+    "mime-types": "^2.1.10",
+    "mkdirp": "^0.5.1",
+    "morgan": "^1.7.0",
+    "rimraf": "^2.5.2",
+    "safeguards": "0.0.3",
+    "simple-bodyparser": "0.0.4",
+    "songbird": "^1.0.2",
+    "trycatch": "^1.5.21",
+    "yargs": "^4.3.1"
+  }
+}
