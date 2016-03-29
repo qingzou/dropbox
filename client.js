@@ -12,17 +12,8 @@ let mkdirp = require('mkdirp')
 let jot = require('json-over-tcp')
 let _ = require('lodash')
 
-
-
 // argv imports for help
-let argv = require('yargs')
-  .help('h')
-  .alias('h', 'help')
-  .describe('dir', 'Root directory to store files')
-  .usage('Usage: bode $0 <command> [options]')
-  .example('bode $0 --dir /app/dropbox')
-  .epilog('Thanks to CodePath and @WalmartLabs for Node.JS!')
-  .argv
+let argv = require('yargs').argv
 
 let SERVER_CONNECTION_PORT = 8099
 let ROOT_DIR = argv.dir || path.resolve(process.cwd())
@@ -33,7 +24,7 @@ function createConnection() {
   let socket = jot.connect(SERVER_CONNECTION_PORT, function() {
     // Send the initial message once connected
     socket.write({
-      question: "Send me ye directory"
+      question: "Send me your directory"
     })
   })
 
