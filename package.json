@@ -4,7 +4,9 @@
   "description": "A recursive implementation of fs.readdir",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -- index.js"
+    "start": "nodemon -- index.js",
+    "start server": "nodemon -- server.js",
+    "start client": "nodemon -- client.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "co": "^4.6.0",
     "co-express": "^1.2.1",
     "express": "^4.13.4",
+    "json-over-tcp": "^0.3.2",
+    "lodash": "^4.6.1",
     "mime-types": "^2.1.10",
     "mkdirp": "^0.5.1",
     "morgan": "^1.7.0",
